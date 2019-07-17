@@ -1,8 +1,8 @@
 {
   "name": "nest",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "基于 Nest.js 的项目基础模板",
+  "author": "lhlxtl@gmail.com",
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
