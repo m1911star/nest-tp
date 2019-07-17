@@ -14,4 +14,9 @@ export class AppController {
   getHelloAll(): string {
     return this.appService.getHello();
   }
+
+  @Get('query')
+  async findAll(): Promise<any []> {
+    return []
+  }
 }
