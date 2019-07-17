@@ -57,6 +57,9 @@ $ nest generate controller [name] controller
 # add service
 $ nest generate service [name] service
 
+# generate documentation
+$ npx compodoc -p tsconfig.json -s --port 8081
+
 ```
 
 ## Test
