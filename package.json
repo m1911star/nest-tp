@@ -19,7 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js",
-    "documentation": "npx compodoc -p tsconfig.json -s --port 8081",
+    "documentation": "npx compodoc -d doc -p tsconfig.json -s --port 8081",
     "api": "ts-node -r tsconfig-paths/register src/api.ts"
   },
   "dependencies": {
