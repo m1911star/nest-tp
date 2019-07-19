@@ -200,7 +200,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get } from &#x27;@nestjs/common&#x27;;
 import { AppService } from &#x27;../service/app.service&#x27;;
 
-@Controller()
+@Controller(&#x27;&#x27;)
 export class AppController {
   constructor(private readonly appService: AppService) {}
 

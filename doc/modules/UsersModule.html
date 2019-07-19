@@ -34,7 +34,7 @@
 
 <ol class="breadcrumb">
     <li>Modules</li>
-    <li>AppModule</li>
+    <li>UsersModule</li>
 </ol>
 
 <div class="text-center module-graph-container">
@@ -62,30 +62,46 @@
 <polygon fill="#fb8072" stroke="transparent" points="406,-10 406,-30 426,-30 426,-10 406,-10"/>
 <text text-anchor="start" x="429.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
-<title>cluster_AppModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="186,-70 186,-195 310,-195 310,-70 186,-70"/>
+<title>cluster_UsersModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="103,-70 103,-195 393,-195 393,-70 103,-70"/>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_AppModule_imports</title>
-<polygon fill="none" stroke="#000000" points="194,-78 194,-130 302,-130 302,-78 194,-78"/>
+<title>cluster_UsersModule_imports</title>
+<polygon fill="none" stroke="#000000" points="259,-78 259,-130 385,-130 385,-78 259,-78"/>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_UsersModule_providers</title>
+<polygon fill="none" stroke="#000000" points="111,-78 111,-130 251,-130 251,-78 111,-78"/>
+</g>
+<!-- DatabaseModule -->
+<g id="node1" class="node">
+<title>DatabaseModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="377.3501,-122 374.3501,-126 353.3501,-126 350.3501,-122 266.6499,-122 266.6499,-86 377.3501,-86 377.3501,-122"/>
+<text text-anchor="middle" x="322" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DatabaseModule</text>
 </g>
 <!-- UsersModule -->
-<g id="node1" class="node">
-<title>UsersModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="293.9218,-122 290.9218,-126 269.9218,-126 266.9218,-122 202.0782,-122 202.0782,-86 293.9218,-86 293.9218,-122"/>
-<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">UsersModule</text>
-</g>
-<!-- AppModule -->
 <g id="node2" class="node">
-<title>AppModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="289.6571,-187 286.6571,-191 265.6571,-191 262.6571,-187 206.3429,-187 206.3429,-151 289.6571,-151 289.6571,-187"/>
-<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppModule</text>
+<title>UsersModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="296.9218,-187 293.9218,-191 272.9218,-191 269.9218,-187 205.0782,-187 205.0782,-151 296.9218,-151 296.9218,-187"/>
+<text text-anchor="middle" x="251" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">UsersModule</text>
 </g>
-<!-- UsersModule&#45;&gt;AppModule -->
+<!-- DatabaseModule&#45;&gt;UsersModule -->
 <g id="edge1" class="edge">
-<title>UsersModule&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M248,-122.1061C248,-122.1061 248,-140.991 248,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="244.5001,-140.9909 248,-150.991 251.5001,-140.991 244.5001,-140.9909"/>
+<title>DatabaseModule&#45;&gt;UsersModule</title>
+<path fill="none" stroke="#000000" d="M281.6427,-122.1061C281.6427,-122.1061 281.6427,-140.991 281.6427,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="278.1428,-140.9909 281.6427,-150.991 285.1428,-140.991 278.1428,-140.9909"/>
+</g>
+<!-- UsersService -->
+<g id="node3" class="node">
+<title>UsersService</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="181" cy="-104" rx="61.9519" ry="18"/>
+<text text-anchor="middle" x="181" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">UsersService</text>
+</g>
+<!-- UsersService&#45;&gt;UsersModule -->
+<g id="edge2" class="edge">
+<title>UsersService&#45;&gt;UsersModule</title>
+<path fill="none" stroke="#000000" d="M224.1328,-117.1537C224.1328,-117.1537 224.1328,-140.6938 224.1328,-140.6938"/>
+<polygon fill="#000000" stroke="#000000" points="220.6329,-140.6938 224.1328,-150.6938 227.6329,-140.6939 220.6329,-140.6938"/>
 </g>
 </g>
 </svg>
@@ -117,7 +133,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app.module.ts</code>
+            <code>src/modules/users/users.module.ts</code>
         </p>
 
 
@@ -126,11 +142,29 @@
         <div class="container-fluid module">
             <div class="row">
                 <div class="col-sm-3">
+                    <h3>Providers<a href="https://angular.io/api/core/NgModule#providers" target="_blank"
+                            title="Official documentation about module providers"><span class="icon ion-ios-information-circle-outline"></a></h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="../injectables/UsersService.html">UsersService</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Controllers<a href="https://docs.nestjs.com/controllers" target="_blank" title="Official documentation about module controllers"><span
+                                class="icon ion-ios-information-circle-outline"></a></h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="../controllers/UsersController.html">UsersController</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
                     <h3>Imports<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span
                                 class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a href="../modules/UsersModule.html">UsersModule</a>
+                            <a href="../modules/DatabaseModule.html">DatabaseModule</a>
                         </li>
                     </ul>
                 </div>
@@ -142,16 +176,21 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Module, HttpModule } from &#x27;@nestjs/common&#x27;;
-import { AppController } from &#x27;./controller/app.controller&#x27;;
-import { AppService } from &#x27;./service/app.service&#x27;;
-import { UsersModule } from &#x27;./modules/users/users.module&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Module } from &#x27;@nestjs/common&#x27;;
+import { DatabaseModule } from &#x27;../database/database.module&#x27;;
+import { userProviders } from &#x27;../../providers/user.providers&#x27;;
+import { UsersService } from &#x27;../../service/users/users.service&#x27;;
+import { UsersController } from &quot;../../controller/users/users.controller&quot;;
 
 @Module({
-  imports: [UsersModule]
+  imports: [DatabaseModule],
+  controllers: [UsersController],
+  providers: [
+    ...userProviders,
+    UsersService,
+  ]
 })
-export class AppModule {}
-</code></pre>
+export class UsersModule {}</code></pre>
     </div>
 </div>
 
@@ -186,7 +225,7 @@ export class AppModule {}
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsersModule.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
