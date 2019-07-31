@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Res, HttpStatus, HttpException } from '@nestjs/common';
 import { UsersService } from '../../service/users/users.service';
-import { User } from '../../entity/user.entity';
+import { User } from '@entity/user.entity';
 import { Response } from 'express';
 
 @Controller()

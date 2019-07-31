@@ -7,9 +7,24 @@
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "strictNullChecks": false,
     "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true
+    "baseUrl": "./src",
+    "incremental": true,
+    "paths": {
+      "@controller/*": ["controller/*"],
+      "@entity/*": ["entity/*"],
+      "@providers/*": ["providers/*"],
+      "@service/*": ["service/*"],
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"]
+    }
   },
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
