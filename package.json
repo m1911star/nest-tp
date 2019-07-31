@@ -69,7 +69,7 @@
     "testEnvironment": "node"
   },
   "_moduleAliases": {
-    "@controller":"dist/controller",
+    "@controller": "dist/controller",
     "@entity": "dist/entity",
     "@providers": "dist/providers",
     "@service": "dist/service",
