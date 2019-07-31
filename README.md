@@ -62,6 +62,13 @@ $ npx compodoc -p tsconfig.json -s --port 8081
 
 ```
 
+## Deploy
+
+```bash
+# with pm2
+$ npm run prestart:prod && pm2 start pm2.yml;
+```
+
 ## Test
 
 ```bash
