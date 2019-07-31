@@ -1,0 +1,8 @@
+apps:
+  - name: 'nest-tp'
+    script: dist/main.js
+    watch: true
+    merge_logs: true
+    log_date_format: 'YYYY-MM-DD HH:mm:ss'
+    env:
+      SERVER_PORT_STATIC: 8001
