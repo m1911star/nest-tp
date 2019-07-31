@@ -3,6 +3,6 @@ import { databaseProviders } from '../../providers/database.providers';
 
 @Module({
   providers: [...databaseProviders],
-  exports: [...databaseProviders]
+  exports: [...databaseProviders],
 })
 export class DatabaseModule {}

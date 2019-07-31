@@ -20,6 +20,6 @@ describe('AppController', () => {
     });
     it('async should return []', async () => {
       expect(await appController.findAll()).toEqual([]);
-    })
+    });
   });
 });

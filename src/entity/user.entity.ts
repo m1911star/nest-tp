@@ -21,14 +21,11 @@ export class User {
   @Column()
   role: number;
 
-
   @Column()
   add_by: string;
 
-
   @Column()
   updated_by: string;
-
 
   @Column()
   created_time: string;

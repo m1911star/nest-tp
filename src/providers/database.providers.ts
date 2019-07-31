@@ -15,5 +15,5 @@ export const databaseProviders = [
       ],
       synchronize: true,
     }),
-  }
-]
+  },
+];

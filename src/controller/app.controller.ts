@@ -12,6 +12,6 @@ export class AppController {
 
   @Get('query')
   async findAll(): Promise<any []> {
-    return []
+    return [];
   }
 }

@@ -4,6 +4,6 @@ import { AppService } from './service/app.service';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
-  imports: [UsersModule]
+  imports: [UsersModule],
 })
 export class AppModule {}
